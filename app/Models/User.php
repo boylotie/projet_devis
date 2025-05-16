@@ -41,4 +41,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function debits()
+    {
+        return $this->hasMany(Debit::class);
+    }
+
 }

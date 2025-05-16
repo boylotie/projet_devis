@@ -30,3 +30,6 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::post('/debit/generate', [DebitController::class, 'generate'])->name('debit.generate');
+
+Route::get('/debit', [DebitController::class, 'index'])->middleware('auth')->name('debit.index');
+

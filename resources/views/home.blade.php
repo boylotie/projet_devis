@@ -4,6 +4,8 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-10">
+            <a href="{{ route('debit.index') }}" class="btn btn-primary">Voir mes débits</a>
+
             <div class="card shadow">
                 <div class="card-header bg-primary text-white">{{ __('Dashboard - Générer un débit') }}</div>
 
